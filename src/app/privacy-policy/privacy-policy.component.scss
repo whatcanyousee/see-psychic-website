@@ -1,0 +1,38 @@
+$redText: #ff4040;
+
+.policy-container {
+
+  .header-title {
+    color: $redText;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .main-text {
+    color: white;
+    width: 800px;
+    font-size: 20px;
+    margin: auto;
+
+    .sub-text {
+      margin: 2rem 0;
+    }
+
+    .paragraph {
+      font-size: 20px;
+    }
+
+    .email-link {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .home-nav {
+      font-size: 20px;
+      text-decoration: underline;
+      margin: 2rem;
+      width: 70px;
+    }
+  }
+}

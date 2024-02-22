@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  background: radial-gradient(
+    circle,
+    rgb(0 0 0 / 20%),
+    rgb(0 0 0 / 69%)),
+  url(/assets/images/see-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overscroll-behavior: auto;
+}
+
+.main-container {
+  overscroll-behavior: auto;
+}
+
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('assets/fonts/cinzel_reg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel Thin';
+  src: url('assets/fonts/cinzel_thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Naskh';
+  src: url('assets/fonts/droidnaskh-regular.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cinzel-regular {
+  font-family: 'Cinzel', serif;
+}
+
+.cinzel-thin {
+  font-family: 'Cinzel Thin', serif;
+}
+
+.droid-naskh {
+  font-family: 'Droid Naskh', serif;
+}
+
+.SEE_Green {
+  color: #C4DC0C;
+}
+
+.pointer {
+  cursor: pointer;
+}
+

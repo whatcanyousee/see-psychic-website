@@ -1,0 +1,25 @@
+.unlock-container {
+  background-color: black;
+  text-align: center;
+  height: 365px;
+  border-bottom: 5px solid #ffffff69;
+
+  .title-text {
+    font-size: 35px;
+    width: 350px;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-paragraph-container {
+    color: white;
+    font: normal normal normal 18px/1.4em "times new roman", times, serif;
+
+    .paragraph-text {
+      width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+  }
+}

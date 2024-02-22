@@ -1,0 +1,82 @@
+.how-to-see-container {
+  .top-text {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .see-for-yourself {
+      font-size: 35px;
+      width: 250px;
+      text-align: center;
+    }
+    .you-are-magic {
+      font-size: 35px;
+      width: 250px;
+      text-align: center;
+    }
+  }
+
+  .how-to-see {
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    width: 500px;
+  }
+
+  .image-tutorial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .step-1-img-container {
+      margin-left: 25px;
+    }
+
+    .step-text {
+      height: 43px;
+      text-align: center;
+    }
+
+    .tutorial-width {
+      width: 240px;
+      font-size: 18px;
+    }
+
+    .lotus-img-container {
+      width: 100%;
+      .positioning-lotus {
+        margin: auto;
+        width: 93px;
+        .lotus-img {
+          text-align: center;
+        }
+      }
+    }
+
+    .cat-img-container {
+      width: 100%;
+      .positioning-cat {
+        margin: auto;
+        width: 127px;
+        .step-2-img {
+          border-radius: 6px;
+          display: inline-grid;
+        }
+      }
+    }
+  }
+
+  .try-online {
+    font-size: 30px;
+    text-align: center;
+    margin: 2rem;
+  }
+}

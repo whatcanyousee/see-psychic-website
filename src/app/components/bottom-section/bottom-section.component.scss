@@ -1,0 +1,35 @@
+.bottom-section-container {
+  height: 150px;
+  width: 553px;
+  margin: auto;
+  padding-top: 2rem;
+
+  .social {
+    width: 39px;
+    height:39px;
+    margin: 0 10px 0 10px;
+  }
+
+  .social-links-container {
+    display: flex;
+    width: 354px;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .site-info {
+    color: white;
+
+    .privacy-policy {
+      text-decoration: underline;
+    }
+  }
+
+  .contact-email {
+    text-align: center;
+    margin-top: 1rem;
+    a {
+      color: white;
+    }
+  }
+}

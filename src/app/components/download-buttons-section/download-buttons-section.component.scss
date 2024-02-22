@@ -1,0 +1,48 @@
+.download-container {
+  width: 100%;
+  height: 240px;
+  background: #0000007a;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 310px; // Width of the image
+    height: 219px; // Height of the image
+    margin-top: -109.5px; // Half of the height to center vertically
+    margin-left: -155px; // Half of the width to center horizontally
+    background: url('/assets/images/Lotus_flower.png') no-repeat center;
+    background-size: 310px 219px; // Explicitly set the size of the background image
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .download {
+    position: relative;
+
+    .button-size {
+      width: 180px;
+      height: 56px;
+    }
+
+    .download-now-text {
+      font-size: 44px;
+      width: 430px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .download-buttons {
+      display: flex;
+      width: 660px;
+      margin: auto;
+      justify-content: space-between;
+    }
+  }
+}
+
+

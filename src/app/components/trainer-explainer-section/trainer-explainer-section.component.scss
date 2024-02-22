@@ -1,0 +1,35 @@
+.explainer-container {
+  height: 184px;
+  background-color: #000000;
+
+  .what-is {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2rem;
+
+    .first-text {
+      font-size: 30px;
+    }
+
+    .psychic-trainer {
+      // Styles for .psychic-trainer
+
+      .second-text {
+        font-family: droid-naskh,serif;
+        font-size: 30px;
+        margin-left: 4rem;
+      }
+
+      .a-tool-text {
+        // Styles for .a-tool-text
+
+        .third-text {
+          font-size: 29px;
+          color: white;
+          margin-left: 8rem;
+        }
+      }
+    }
+  }
+}
