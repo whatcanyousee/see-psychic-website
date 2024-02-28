@@ -35,6 +35,8 @@
 
   .site-info {
     color: white;
+    margin: auto;
+    width: 555px;
     .privacy-policy {
       text-decoration: underline;
     }
@@ -42,7 +44,6 @@
     @media (max-width: 768px) {
       text-align: center;
       width: 325px;
-      margin: auto;
     }
   }
 
