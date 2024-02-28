@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-jumbotron',
@@ -11,4 +11,17 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './jumbotron-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class JumbotronComponent { }
+export class JumbotronComponent {
+  isMobileScreen: boolean = this.checkIfMobileScreen();
+
+  constructor() {}
+
+  checkIfMobileScreen(): boolean {
+    return window.innerWidth <= 768;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isMobileScreen = this.checkIfMobileScreen();
+  }
+ }

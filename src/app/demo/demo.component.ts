@@ -54,13 +54,12 @@ export class DemoComponent implements OnInit, AfterViewInit, OnDestroy {
     canvas.height = containerHeight.clientHeight * ratio;
     canvas.getContext('2d')?.scale(ratio, ratio);
     const storedData = this.signaturePad.toData();
-    this.signaturePad.clear(); // otherwise isEmpty() might return incorrect value
+    this.signaturePad.clear();
     this.signaturePad.fromData(storedData);
   }
 
   clearCanvas() {
     this.signaturePad.clear();
-    // Implement additional logic as needed, similar to your existing JavaScript
     this.toggleIconContainer(false);
   }
 

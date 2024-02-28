@@ -1,12 +1,13 @@
 .unlock-container {
   background-color: #000000b5;
   text-align: center;
-  height: 365px;
+  padding: 2rem 1rem;
   border-bottom: 5px solid #ffffff69;
+  box-sizing: border-box;
 
   .title-text {
-    font-size: 35px;
-    width: 350px;
+    font-size: 2.2rem;
+    width: 90%;
     margin: auto;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -14,12 +15,39 @@
 
   .main-paragraph-container {
     color: white;
-    font: normal normal normal 18px/1.4em "times new roman", times, serif;
+    font: normal normal normal 1rem/1.4em "times new roman", times, serif;
 
     .paragraph-text {
       width: 700px;
       margin: auto;
-      text-align: left;
+      text-align: justify;
+
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .title-text {
+    width: 400px;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-paragraph-container {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title-text {
+      font-size: 1.5rem;
+    }
+
+    .main-paragraph-container {
+      font-size: 0.8rem;
     }
   }
 }

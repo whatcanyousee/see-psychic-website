@@ -2,32 +2,54 @@
   height: 184px;
   background-color: #000000b5;
 
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
   .what-is {
     width: 800px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 2rem;
 
+    @media (max-width: 768px) {
+      width: 90%;
+      padding-top: 1rem;
+    }
+
     .first-text {
       font-size: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
     }
 
     .psychic-trainer {
-      // Styles for .psychic-trainer
-
       .second-text {
-        font-family: droid-naskh,serif;
+        font-family: droid-naskh, serif;
         font-size: 30px;
         margin-left: 4rem;
+
+        @media (max-width: 768px) {
+          font-size: 24px;
+          margin-left: 2rem;
+        }
       }
 
       .a-tool-text {
-        // Styles for .a-tool-text
-
         .third-text {
           font-size: 29px;
           color: white;
           margin-left: 8rem;
+
+          @media (max-width: 768px) {
+            font-size: 24px;
+            margin-left: 4rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            line-height: 1;
+          }
         }
       }
     }

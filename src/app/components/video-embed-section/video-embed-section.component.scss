@@ -1,16 +1,39 @@
 .video-embed-container {
-  height: 542px;
-
   .lotus-img-container {
-    width:127px;
-    margin:auto;
+    width: 127px;
+    margin: auto;
     padding-top: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .youtube-content {
     width: 668px;
     height: 380px;
     border: 5px solid white;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .youtube-content {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-top: 56.25%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

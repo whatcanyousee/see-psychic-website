@@ -2,12 +2,22 @@
   width: 100%;
   padding-top: 2rem;
 
+  @media (max-width: 768px) {
+    width: auto;
+    height: 60rem;
+  }
+
   .image-container {
     position: relative;
     height: 600px;
     width: 880px;
     color: white;
     margin: auto;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      width: auto;
+    }
 
     .see-logo-image {
       position: absolute;
@@ -16,6 +26,13 @@
       width: 580px;
       height: 461px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        position: relative !important;
+        top: inherit;
+        left: inherit;
+        width: auto;
+        height: 350px;
+      }
     }
 
     .phone-image {
@@ -25,6 +42,14 @@
       width: 259px;
       height: 499px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        position: inherit;
+        width: 370px;
+        height: 499px;
+        margin-top: 2rem;
+        object-fit: cover;
+        z-index: 10;
+      }
     }
 
     .moon-image {
@@ -34,6 +59,9 @@
       width: 154px;
       height: 154px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        z-index: 1;
+      }
     }
 
     .sun-image {
@@ -43,6 +71,9 @@
       width: 175px;
       height: 175px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        z-index: 1;
+      }
     }
 
     .three-eyed-cat-image {
@@ -52,6 +83,9 @@
       width: 111px;
       height: 101px;
       object-fit: cover;
+      @media (max-width: 768px) {
+        z-index: 1;
+      }
     }
 
     .jumbo-text {
@@ -59,10 +93,18 @@
       top: 525px;
       left: 300px;
       font-size: 18px;
-
-      .see-pitch-text {
-        text-align: center;
-        width: 315px;
+      @media (max-width: 768px) {
+        position: relative !important;
+        top: auto;
+        left: auto;
+        .see-pitch-text {
+          text-align: center;
+          width: 315px;
+          position: relative !important;
+          top: inherit;
+          left: inherit;
+          margin: auto;
+        }
       }
     }
   }

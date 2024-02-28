@@ -1,6 +1,6 @@
 .download-container {
   width: 100%;
-  height: 240px;
+  height: 250px;
   background: #0000007a;
   overflow: hidden;
   position: relative;
@@ -10,14 +10,22 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 310px; // Width of the image
-    height: 219px; // Height of the image
-    margin-top: -109.5px; // Half of the height to center vertically
-    margin-left: -155px; // Half of the width to center horizontally
+    width: 310px;
+    height: 219px;
+    margin-top: -109.5px;
+    margin-left: -155px;
     background: url('/assets/images/Lotus_flower.png') no-repeat center;
-    background-size: 310px 219px; // Explicitly set the size of the background image
+    background-size: 310px 219px;
     opacity: 0.3;
     z-index: 0;
+
+    @media (max-width: 768px) {
+      width: 150px;
+      height: 106px;
+      margin-top: -53px;
+      margin-left: -75px;
+      background-size: 150px 106px;
+    }
   }
 
   .download {
@@ -26,6 +34,10 @@
     .button-size {
       width: 180px;
       height: 56px;
+      @media (max-width: 768px) {
+        width: 140px;
+        height: 44px;
+      }
     }
 
     .download-now-text {
@@ -35,14 +47,29 @@
       margin-left: auto;
       padding-top: 2rem;
       padding-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+        width: 275px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
     }
+
     .download-buttons {
       display: flex;
       width: 660px;
       margin: auto;
       justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        .google-button, .apple-button, .amazon-button {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
-
-

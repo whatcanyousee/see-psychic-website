@@ -22,7 +22,6 @@ export class ScrollToTopButtonComponent {
   constructor(private cdRef: ChangeDetectorRef) { }
 
   ngOnInit(): void {
-    // Try to attach to a specific known scrollable element by ID or class
     this.scrollableElement = document.querySelector('.scrollable-content');
     if (this.scrollableElement) {
       this.scrollableElement.addEventListener('scroll', this.onScroll.bind(this));
