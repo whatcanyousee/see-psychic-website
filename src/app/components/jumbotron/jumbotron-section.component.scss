@@ -4,7 +4,7 @@
 
   @media (max-width: 768px) {
     width: auto;
-    height: 60rem;
+    //height: 60rem;
   }
 
   .image-container {
@@ -17,6 +17,7 @@
     @media (max-width: 768px) {
       text-align: center;
       width: auto;
+      height: auto;
     }
 
     .see-logo-image {
@@ -30,8 +31,9 @@
         position: relative !important;
         top: inherit;
         left: inherit;
-        width: auto;
-        height: 350px;
+        width: 90%;
+        height: 90%;
+        max-width: 400px;
       }
     }
 
@@ -44,8 +46,9 @@
       object-fit: cover;
       @media (max-width: 768px) {
         position: inherit;
-        width: 370px;
-        height: 499px;
+        width: 90%;
+        height: 90%;
+        max-width: 370px;
         margin-top: 2rem;
         object-fit: cover;
         z-index: 10;
@@ -99,7 +102,8 @@
         left: auto;
         .see-pitch-text {
           text-align: center;
-          width: 315px;
+          width: 90%;
+          max-width: 400px;
           position: relative !important;
           top: inherit;
           left: inherit;
