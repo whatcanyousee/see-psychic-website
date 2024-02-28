@@ -11,11 +11,8 @@ body {
   width: 100%;
   overflow: auto;
   scroll-behavior: smooth;
-  background: radial-gradient(
-    circle,
-    rgb(0 0 0 / 20%),
-    rgb(0 0 0 / 69%)),
-  url(/assets/images/see-background.jpg) no-repeat center center fixed;
+  background: radial-gradient(circle, #00000059, #000000de),
+    url(/assets/images/background-min.png) no-repeat center center fixed;
   background-size: cover;
   overscroll-behavior: auto;
 }
@@ -24,55 +21,52 @@ body {
   overscroll-behavior: auto;
 }
 
-
 @font-face {
-  font-family: 'Cinzel';
-  src: url('assets/fonts/cinzel_reg.woff2') format('woff2');
+  font-family: "Cinzel";
+  src: url("assets/fonts/cinzel_reg.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cinzel Thin';
-  src: url('assets/fonts/cinzel_thin.woff2') format('woff2');
+  font-family: "Cinzel Thin";
+  src: url("assets/fonts/cinzel_thin.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Droid Naskh';
-  src: url('assets/fonts/droidnaskh-regular.woff') format('woff2');
+  font-family: "Droid Naskh";
+  src: url("assets/fonts/droidnaskh-regular.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'symbols';
-  src: url('assets/fonts/icomoon.ttf');
+  font-family: "symbols";
+  src: url("assets/fonts/icomoon.ttf");
 }
 
 .cinzel-regular {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 .cinzel-thin {
-  font-family: 'Cinzel Thin', serif;
+  font-family: "Cinzel Thin", serif;
 }
 
 .droid-naskh {
-  font-family: 'Droid Naskh', serif;
+  font-family: "Droid Naskh", serif;
 }
 
-
 .icomoon {
-  font-family: 'symbols';
+  font-family: "symbols";
 }
 
 .SEE_Green {
-  color: #C4DC0C;
+  color: #c4dc0c;
 }
 
 .pointer {
   cursor: pointer;
 }
-
