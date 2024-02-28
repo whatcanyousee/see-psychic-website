@@ -15,6 +15,11 @@ $redText: #ff4040;
     font-size: 20px;
     margin: auto;
 
+    @media (max-width: 768px) {
+      height: auto;
+      width: 350px;
+    }
+
     .sub-text {
       margin: 2rem 0;
     }

@@ -6,7 +6,7 @@
 
   .social {
     width: 39px;
-    height:39px;
+    height: 39px;
     margin: 0 10px 0 10px;
   }
 
@@ -15,21 +15,46 @@
     width: 354px;
     margin: auto;
     padding-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      .x-social,
+      .yt-social,
+      .tk-social,
+      .tel-social,
+      .od-social,
+      .red-social {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+      }
+    }
   }
 
   .site-info {
     color: white;
-
     .privacy-policy {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      width: 325px;
+      margin: auto;
     }
   }
 
   .contact-email {
     text-align: center;
     margin-top: 1rem;
+    padding-bottom: 2rem;
     a {
       color: white;
+    }
+    @media (max-width: 768px) {
+      font-size: larger;
     }
   }
 }
