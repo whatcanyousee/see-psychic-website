@@ -1,16 +1,15 @@
-<div class="scrollable-content">
+<div  class="scrollable-content" #scrollableContent>
   <div>
-  <app-navbar />
-</div>
+    <app-navbar />
+  </div>
 
-<router-outlet />
+  <router-outlet />
 
-<div>
-  <app-bottom-section />
-</div>
+  <div>
+    <app-bottom-section />
+  </div>
 
-<div>
-  <app-scroll-to-top-button />
-</div>
-
+  <div>
+    <app-scroll-to-top-button [scrollableContent]="scrollableContent" />
+  </div>
 </div>

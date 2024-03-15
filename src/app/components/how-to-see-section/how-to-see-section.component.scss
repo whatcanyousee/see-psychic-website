@@ -11,7 +11,7 @@
       width: 90%;
     }
 
-    .see-for-yourself{
+    .see-for-yourself {
       font-size: 35px;
       width: 250px;
       text-align: center;
@@ -103,9 +103,11 @@
       text-align: center;
     }
 
-    .lotus-img-container, .cat-img-container {
+    .lotus-img-container,
+    .cat-img-container {
       width: 100%;
-      .positioning-lotus, .positioning-cat {
+      .positioning-lotus,
+      .positioning-cat {
         margin: auto;
         text-align: center;
         @media (max-width: 768px) {
