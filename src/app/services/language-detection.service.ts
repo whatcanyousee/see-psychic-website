@@ -19,7 +19,7 @@ export class LanguageDetectionService {
   detectLanguage(): Observable<string> {
     // this is a bad idea but we're doing it anyway.
     const locationObj: any = {...this.location};
-    const host = locationObj._locationStrategy._baseHref.split('/')[2];
+    const host = locationObj._locationStrategy?._platformLocation?._location?.href.split('/')[2];
     const subdomainMatch = host?.match(/^([a-z]{2})\./);
 
     if (subdomainMatch) {
