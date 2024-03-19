@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { Location } from '@angular/common';
+import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -17,7 +17,9 @@ export class LanguageDetectionService {
   constructor(private location: Location) {}
 
   detectLanguage(): Observable<string> {
-    const host = this.location.path().split('/')[2];
+    // this is a bad idea but we're doing it anyway.
+    const locationObj: any = {...this.location};
+    const host = locationObj._locationStrategy._baseHref.split('/')[2];
     const subdomainMatch = host?.match(/^([a-z]{2})\./);
 
     if (subdomainMatch) {
