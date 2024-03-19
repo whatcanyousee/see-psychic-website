@@ -1,12 +1,17 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { ChangeDetectionStrategy, Component, HostListener, Inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostListener,
+  Inject,
+} from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-jumbotron',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
+  providers: [LanguageService],
   templateUrl: './jumbotron-section.component.html',
   styleUrl: './jumbotron-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -14,10 +19,18 @@ import { ChangeDetectionStrategy, Component, HostListener, Inject } from '@angul
 export class JumbotronComponent {
   isMobileScreen: boolean = this.checkIfMobileScreen();
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  jumboTrontext = this.getTranslation('JUMOBTRON_SUBTITLE');
+
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private languageService: LanguageService
+  ) {}
+
+  getTranslation(key: string): Promise<string> {
+    return this.languageService.getTranslation(key);
+  }
 
   checkIfMobileScreen(): boolean {
-
     const window = this.document.defaultView;
     if (window) {
       return window.innerWidth <= 768;
@@ -30,4 +43,4 @@ export class JumbotronComponent {
   onResize() {
     this.isMobileScreen = this.checkIfMobileScreen();
   }
- }
+}

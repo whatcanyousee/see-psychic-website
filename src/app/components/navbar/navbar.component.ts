@@ -3,6 +3,8 @@ import { Subscription } from 'rxjs';
 import { ScreenSizeService } from '../../services/screen-size.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { LanguageDetectionService } from '../../services/language-detection.service';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,13 +18,22 @@ export class NavbarComponent implements OnInit, OnDestroy {
   isMobileScreen: boolean = false;
   private screenSizeSubscription!: Subscription;
 
-  constructor(private screenSizeService: ScreenSizeService) {}
+  constructor(
+    private screenSizeService: ScreenSizeService,
+  ) {
+    this.detectLanguage();
+  }
+
+  async detectLanguage() {
+
+  }
 
   ngOnInit() {
     this.isMobileScreen = this.screenSizeService.isMobileScreen;
-    this.screenSizeSubscription = this.screenSizeService.isMobileScreenChange.subscribe((isMobile) => {
+    this.screenSizeSubscription =
+      this.screenSizeService.isMobileScreenChange.subscribe((isMobile) => {
         this.isMobileScreen = isMobile;
-    });
+      });
   }
 
   toggleNavbar() {

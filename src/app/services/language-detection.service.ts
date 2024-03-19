@@ -18,7 +18,7 @@ export class LanguageDetectionService {
 
   detectLanguage(): Observable<string> {
     const host = this.location.path().split('/')[2];
-    const subdomainMatch = host.match(/^([a-z]{2})\./);
+    const subdomainMatch = host?.match(/^([a-z]{2})\./);
 
     if (subdomainMatch) {
       const subdomain = subdomainMatch[1];
