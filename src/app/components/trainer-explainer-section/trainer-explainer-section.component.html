@@ -1,11 +1,15 @@
-<div class="explainer-container ">
+<div class="explainer-container">
   <div class="what-is">
-    <div class="first-text cinzel-regular SEE_Green">What is a...</div>
+    <div class="first-text cinzel-regular SEE_Green">
+      {{ whatIsAText | async }}...
+    </div>
     <div class="psychic-trainer">
-      <div class="second-text cinzel-regular SEE_Green droid-naskh">psychic • trainer:</div>
+      <div class="second-text cinzel-regular SEE_Green droid-naskh">
+        {{ psychicTrainerText | async }}:
+      </div>
       <div class="a-tool-text">
         <div class="third-text droid-naskh">
-          a tool used to improve your latent psychic abilities.
+          {{ toolForPracticeText | async }}
         </div>
       </div>
     </div>

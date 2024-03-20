@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { ScreenSizeService } from '../../services/screen-size.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +17,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
   isMobileScreen: boolean = false;
   private screenSizeSubscription!: Subscription;
 
+  homeLink: Promise<string> = this.getTranslation('NAVBAR_TITLE_HOME_LINK');
+  demoLink: Promise<string> = this.getTranslation('NAVBAR_TITLE_DEMO_LINK');
+
   constructor(
+    private languageService: LanguageService,
     private screenSizeService: ScreenSizeService,
   ) {
   }
@@ -27,6 +32,10 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.screenSizeService.isMobileScreenChange.subscribe((isMobile) => {
         this.isMobileScreen = isMobile;
       });
+  }
+
+  getTranslation(key: string): Promise<string> {
+    return this.languageService.getTranslation(key);
   }
 
   toggleNavbar() {

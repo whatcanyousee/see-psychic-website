@@ -2,12 +2,17 @@
   <div *ngIf="isMobileScreen" (click)="toggleNavbar()" class="hamburger-icon">
     ☰
   </div>
-  <div class="link-container" [class.active]="isMobileScreen ? isNavbarVisible : true">
+  <div
+    class="link-container"
+    [class.active]="isMobileScreen ? isNavbarVisible : true"
+  >
     <div class="links cinzel-regular SEE_Green pointer" (click)="closeNavbar()">
-      <a class="cinzel-regular SEE_Green pointer a-link" routerLink="/">Home</a>
+      <a class="cinzel-regular SEE_Green pointer a-link" routerLink="/">{{
+        homeLink | async
+      }}</a>
     </div>
     <div class="links cinzel-regular SEE_Green pointer" (click)="closeNavbar()">
-      <a class="SEE_Green a-link" routerLink="/demo">Try&nbsp;the&nbsp;Demo!</a>
+      <a class="SEE_Green a-link" routerLink="/demo">{{ demoLink | async }}</a>
     </div>
   </div>
 </div>

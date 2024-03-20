@@ -19,7 +19,7 @@ import { LanguageService } from '../../services/language.service';
 export class JumbotronComponent {
   isMobileScreen: boolean = this.checkIfMobileScreen();
 
-  jumboTrontext = this.getTranslation('JUMOBTRON_SUBTITLE');
+  jumboTrontext: Promise<string> = this.getTranslation('JUMOBTRON_SUBTITLE');
 
   constructor(
     @Inject(DOCUMENT) private document: Document,

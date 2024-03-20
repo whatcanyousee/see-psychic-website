@@ -1,88 +1,58 @@
 <div class="policy-container">
-  <div class="header-title cinzel-thin">Privacy Policy</div>
+  <div class="header-title cinzel-thin">{{privacyPolicyTitleText | async}}</div>
 
   <div class="main-text droid-naskh">
     <div class="sub-text">
       <div class="text">
-        Blackhouse Consulting, LLC built the SEE app as a Commercial app.
+        {{topText | async}}
       </div>
       <div class="text">
-        This SERVICE is provided by and is intended for use as is.
+        {{secondText | async}}
       </div>
     </div>
 
     <div class="paragraph">
-      This page is used to inform visitors regarding my policies with the
-      collection, use, and disclosure of Personal Information if anyone decided
-      to use my Service. If you choose to use my Service, then you agree to the
-      collection and use of information in relation to this policy. The Personal
-      Information that I collect is used for providing and improving the
-      Service. I will not use or share your information with anyone except as
-      described in this Privacy Policy. The terms used in this Privacy Policy
-      have the same meanings as in our Terms and Conditions, which is accessible
-      at SEE unless otherwise defined in this Privacy Policy.
+      {{disclaimerText | async}}
     </div>
 
     <div class="section-text">
-      <h2>Changes to This Terms and Conditions</h2>
+      <h2>{{changesTitleText | async}}</h2>
     </div>
 
     <div class="paragraph">
-      Blackhouse Consulting, LLC does not collect any personally identifiable
-      data.The app does use third party services that may collect information
-      used to identify you.
+      {{changesParagraphText | async}}
     </div>
 
-    <div class="section-text"><h2>Log Data</h2></div>
+    <div class="section-text"><h2>{{logDataTitleText | async}}</h2></div>
 
     <div class="paragraph">
-      I want to inform you that whenever you use my Service, in a case of an
-      error in the app I collect data and information (through third party
-      products such as Google Developer Console Analytics) on your phone called
-      Log Data. This Log Data may include information such as your device
-      Internet Protocol (“IP”) address, device name, operating system version,
-      the configuration of the app when utilizing my Service, the time and date
-      of your use of the Service, and other statistics based on this metadata.
+      {{logDataParagraphText | async}}
     </div>
 
-    <div class="section-text"><h2>Security</h2></div>
+    <div class="section-text"><h2>{{securityTitleText | async}}</h2></div>
 
     <div class="paragraph">
-      SEE stores and collects no personally identifiable data and thus stores
-      your remote viewing sessions completely on your device. Blackhouse
-      Consulting, LLC has no mechanism to remotely retrieve, read, or access
-      that data. But remember that no method of transmission over the internet,
-      or method of electronic storage is 100% secure and reliable, and I cannot
-      guarantee its absolute security.
+      {{securityParagraphText | async}}
     </div>
 
-    <div class="section-text"><h2>Links to Other Sites</h2></div>
+    <div class="section-text"><h2>{{linskToSitesTitleText | async}}</h2></div>
 
     <div class="paragraph">
-      This Service may contain links to other sites. If you click on a
-      third-party link, you will be directed to that site. Note that these
-      external sites are not operated by me. Therefore, I strongly advise you to
-      review the Privacy Policy of these websites. I have no control over and
-      assume no responsibility for the content, privacy policies, or practices
-      of any third-party sites or services.
+      {{linskToSitesParagraphText | async}}
     </div>
 
-    <div class="section-text"><h2>Changes to This Privacy Policy</h2></div>
+    <div class="section-text"><h2>{{changeToPolicyTitleText | async}}</h2></div>
 
     <div class="paragraph">
-      I may update our Privacy Policy from time to time. Thus, you are advised
-      to review this page periodically for any changes. I will notify you of any
-      changes by posting the new Privacy Policy on this page. These changes are
-      effective immediately after they are posted on this page. If you have any
-      questions or suggestions about my Privacy Policy, do not hesitate to
-      contact us at
+      {{changeToPolicyParagraphText | async}}
       <a target="_blank" class="email-link" href="mailto:BeSeen@canyousee.net"
         >BeSeen&#64;canyousee.net</a
       >
     </div>
 
     <div class="home-nav">
-      <a class="cinzel-regular SEE_Green pointer" [routerLink]="['/']">Home</a>
+      <a class="cinzel-regular SEE_Green pointer" [routerLink]="['/']">
+      {{homeLinkText | async}}</a>
     </div>
   </div>
 </div>

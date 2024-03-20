@@ -7,19 +7,30 @@
   <![endif]-->
   <div class="header-container">
     <img src="assets/images/New_SEE_Logo-min.png" class="hdr-img" />
-    <h1 class="main-font-bold green">Psychic Trainer Demo</h1>
+    <h1 class="main-font-bold green">{{ seePsychicTitleText | async }}</h1>
   </div>
   <div class="canvas-container">
     <div #signatureContainer class="signature-pad-container">
       <canvas #signaturePadCanvas id="signature_pad"></canvas>
     </div>
-  <div class="btn-group">
-    <a class="button-text green main-font" id="clear_button" (click)="clearCanvas()">Clear</a>
-    <a class="button-text green main-font" id="reveal_button" (click)="revealSymbol()">Reveal Target</a>
-  </div>
-  <div #iconRevealContainer id="icon-reveal-container">
-    <div class="icon-container">
-      <label id="reveal_icon" #revealIcon class="icomoon"></label>
+    <div class="btn-group">
+      <a
+        class="button-text green main-font"
+        id="clear_button"
+        (click)="clearCanvas()"
+        >{{ clearButtonText | async }}</a
+      >
+      <a
+        class="button-text green main-font"
+        id="reveal_button"
+        (click)="revealSymbol()"
+        >{{ revealTargetText | async }}</a
+      >
+    </div>
+    <div #iconRevealContainer id="icon-reveal-container">
+      <div class="icon-container">
+        <label id="reveal_icon" #revealIcon class="icomoon"></label>
+      </div>
     </div>
   </div>
 </div>

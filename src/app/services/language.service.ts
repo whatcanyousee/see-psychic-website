@@ -38,4 +38,12 @@ export class LanguageService {
     }
     return '';
   }
+
+  async getLanguageCode() {
+    if (isPlatformBrowser(this.platformId)) {
+      const lang = localStorage.getItem('lang');
+      return lang || 'en';
+    }
+    return 'en';
+  }
 }

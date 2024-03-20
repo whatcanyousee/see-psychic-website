@@ -1,15 +1,60 @@
 <div class="bottom-section-container">
   <div class="social-links-container">
-    <div class="x-social"><img (click)="navigateToSocial('x')" src="assets/images/xlogo.png" alt="" class="social x-img pointer"></div>
-    <div class="yt-social"><img (click)="navigateToSocial('yt')" src="assets/images/youtubelogo.png" alt="" class="social yt-img pointer"></div>
-    <div class="tk-social"><img (click)="navigateToSocial('tk')" src="assets/images/tiktoklogo.png" alt="" class="social tk-img pointer"></div>
-    <div class="tel-social"><img (click)="navigateToSocial('tel')" src="assets/images/telegramlogo.png" alt="" class="social tel-img pointer"></div>
-    <div class="od-social"><img (click)="navigateToSocial('od')" src="assets/images/odyseelogo.png" alt="" class="social od-img pointer"></div>
-    <div class="red-social"><img (click)="navigateToSocial('red')" src="assets/images/redditlogo.png" alt="" class="social red-img pointer"></div>
+    <div class="x-social">
+      <img
+        (click)="navigateToSocial('x')"
+        src="assets/images/xlogo.png"
+        alt=""
+        class="social x-img pointer"
+      />
+    </div>
+    <div class="yt-social">
+      <img
+        (click)="navigateToSocial('yt')"
+        src="assets/images/youtubelogo.png"
+        alt=""
+        class="social yt-img pointer"
+      />
+    </div>
+    <div class="tk-social">
+      <img
+        (click)="navigateToSocial('tk')"
+        src="assets/images/tiktoklogo.png"
+        alt=""
+        class="social tk-img pointer"
+      />
+    </div>
+    <div class="tel-social">
+      <img
+        (click)="navigateToSocial('tel')"
+        src="assets/images/telegramlogo.png"
+        alt=""
+        class="social tel-img pointer"
+      />
+    </div>
+    <div class="od-social">
+      <img
+        (click)="navigateToSocial('od')"
+        src="assets/images/odyseelogo.png"
+        alt=""
+        class="social od-img pointer"
+      />
+    </div>
+    <div class="red-social">
+      <img
+        (click)="navigateToSocial('red')"
+        src="assets/images/redditlogo.png"
+        alt=""
+        class="social red-img pointer"
+      />
+    </div>
   </div>
   <div class="site-info">
-    © Copyright Blackhouse Consulting, LLC 2024. All Rights Reserved |
-    <span class="pointer privacy-policy" (click)="triggerNav()">Privacy Policy</span>
+    © {{ copyrightText | async }} Blackhouse Consulting, LLC 2024.
+    {{ rightsReservedText | async }} |
+    <span class="pointer privacy-policy" (click)="triggerNav()">{{
+      privacyLinkText | async
+    }}</span>
   </div>
   <div class="contact-email">
     <a href="mailto:icansee@canyousee.net">icansee&#64;canyousee.net</a>

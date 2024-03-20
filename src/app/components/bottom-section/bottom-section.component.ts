@@ -1,6 +1,7 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-bottom-section',
@@ -11,10 +12,19 @@ import { Router, RouterModule } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BottomSectionComponent {
+  copyrightText: Promise<string> = this.getTranslation('COPYRIGHT_TEXT');
+  rightsReservedText: Promise<string> = this.getTranslation('ALL_RIGHTS_RESERVED');
+  privacyLinkText: Promise<string> = this.getTranslation('PRIVACY_POLICY_LINK');
+
   constructor(
     private router: Router,
+    private languageService: LanguageService,
     @Inject(DOCUMENT) private document: Document,
   ) {}
+
+  getTranslation(key: string): Promise<string> {
+    return this.languageService.getTranslation(key);
+  }
 
   triggerNav() {
     this.router.navigate(['/privacy-policy']);

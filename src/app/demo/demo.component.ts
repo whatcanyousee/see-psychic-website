@@ -15,6 +15,7 @@ import {
 } from '@angular/core';
 import SignaturePad from 'signature_pad';
 import { symbolList } from './symbols';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-demo',
@@ -26,17 +27,31 @@ import { symbolList } from './symbols';
   encapsulation: ViewEncapsulation.None,
 })
 export class DemoComponent implements OnInit, AfterViewInit, OnDestroy {
-  @ViewChild('signaturePadCanvas', { static: false }) signaturePadCanvas!: ElementRef<HTMLCanvasElement>;
-  @ViewChild('signatureContainer', { static: false }) signatureContainer!: ElementRef<HTMLElement>;
-  @ViewChild('revealIcon', { static: false }) revealIcon!: ElementRef<HTMLElement>;
-  @ViewChild('iconRevealContainer', { static: false }) iconRevealContainer!: ElementRef<HTMLElement>;
+  @ViewChild('signaturePadCanvas', { static: false })
+  signaturePadCanvas!: ElementRef<HTMLCanvasElement>;
+  @ViewChild('signatureContainer', { static: false })
+  signatureContainer!: ElementRef<HTMLElement>;
+  @ViewChild('revealIcon', { static: false })
+  revealIcon!: ElementRef<HTMLElement>;
+  @ViewChild('iconRevealContainer', { static: false })
+  iconRevealContainer!: ElementRef<HTMLElement>;
 
   @HostBinding('class.special-background') specialBackground = true;
+
+  seePsychicTitleText: Promise<string> = this.getTranslation(
+    'SEE_PSYCHIC_DEMO_TITLE'
+  );
+  clearButtonText: Promise<string> = this.getTranslation('CLEAR_BUTTON');
+  revealTargetText: Promise<string> = this.getTranslation('REVEAL_BUTTON');
+  languageCode: Promise<string> = this.getLanguageCode();
 
   signaturePad!: SignaturePad;
   symbolList = symbolList;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private languageService: LanguageService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -63,7 +78,8 @@ export class DemoComponent implements OnInit, AfterViewInit, OnDestroy {
   resizeCanvas() {
     if (isPlatformBrowser(this.platformId)) {
       const canvas = this.signaturePadCanvas?.nativeElement;
-      const containerHeight = this.signatureContainer?.nativeElement?.clientHeight;
+      const containerHeight =
+        this.signatureContainer?.nativeElement?.clientHeight;
       const ratio = Math.max(window.devicePixelRatio || 1, 1);
       if (canvas) {
         canvas.width = canvas.offsetWidth * ratio;
@@ -93,13 +109,24 @@ export class DemoComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   getRandomSymbol() {
-    const iconTemp = this.symbolList[Math.floor(Math.random() * this.symbolList.length)];
+    const iconTemp =
+      this.symbolList[Math.floor(Math.random() * this.symbolList.length)];
     return String.fromCharCode(iconTemp);
   }
 
   toggleIconContainer(isDisplayed: boolean) {
     if (isPlatformBrowser(this.platformId)) {
-      this.iconRevealContainer.nativeElement.style.display = isDisplayed ? 'flex' : 'none';
+      this.iconRevealContainer.nativeElement.style.display = isDisplayed
+        ? 'flex'
+        : 'none';
     }
+  }
+
+  getTranslation(key: string): Promise<string> {
+    return this.languageService.getTranslation(key);
+  }
+
+  getLanguageCode() {
+    return this.languageService.getLanguageCode();
   }
 }
