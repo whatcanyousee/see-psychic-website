@@ -13,7 +13,7 @@ export function appInitializerFactory(
 ) {
   return () => {
     appInitializer.getCurrentUrl();
-    return languageDetectionService.detectLanguage().toPromise().then(lang => {
+    return languageDetectionService.detectLanguage().subscribe((lang: string) => {
       languageService.setLanguage(lang);
     });
   };
