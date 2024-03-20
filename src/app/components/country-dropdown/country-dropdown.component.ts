@@ -22,6 +22,7 @@ export class CountryDropdownComponent {
   countries = [
     { flag: 'assets/images/flags/en.png', value: 'en' },
     { flag: 'assets/images/flags/es.png', value: 'es' },
+    { flag: 'assets/images/flags/ar.png', value: 'ar' },
     // Add more countries as needed
   ];
 
