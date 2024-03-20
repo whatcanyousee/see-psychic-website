@@ -10,8 +10,9 @@ export class LanguageDetectionService {
     'ar', 'bn', 'de', 'el',
     'en', 'es', 'fr', 'he',
     'hi', 'id', 'it', 'ja',
-    'ko', 'nl', 'pl', 'ru',
-    'sv', 'sw', 'vi', 'zh',
+    'ko', 'nl', 'pl', 'pt',
+    'ru', 'sv', 'sw', 'vi',
+    'zh'
   ];
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
