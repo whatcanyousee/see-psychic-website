@@ -3,6 +3,7 @@ import { loadTranslations } from '@angular/localize';
 import { en } from '../../assets/i18n/en';
 import { es } from '../../assets/i18n/es';
 import { isPlatformBrowser } from '@angular/common';
+import { ar } from '../../assets/i18n/ar';
 
 interface LanguageTranslations {
   [lang: string]: {
@@ -17,6 +18,7 @@ export class LanguageService {
   private translations: LanguageTranslations = {
     en: en,
     es: es,
+    ar: ar,
     // Add more language translations as needed
   };
   globalLanguage: string | null = 'en';
