@@ -1,11 +1,15 @@
 export const en = {
+  // Navbar
   NAVBAR_TITLE_HOME_LINK: 'HOME',
   NAVBAR_TITLE_DEMO_LINK: 'Try the Demo!',
 
+  // Jumbotron Section
   JUMOBTRON_SUBTITLE: 'The Premiere Remote Viewing & Psychic trainer is here!',
 
+  // Download Now Section
   DOWNLOAD_NOW: 'Download Now',
 
+  // How to SEE Section
   SEE_FOR_YOURSELF: 'See for yourself!',
   YOU_ARE_MAGICAL: 'You are magical!',
   HOW_TO: 'How to',
@@ -17,10 +21,12 @@ export const en = {
 
   TRY_FREE_ONLINE: 'Try it online free',
 
+  // What is a Psychic Trainer Section
   WHAT_IS_A: 'What is a',
   PSYCHIC_TRAINER: 'psychic • trainer',
   A_TOOL_FOR_PRACTICE: 'a tool used to improve your latent psychic abilities.',
 
+  // Unlock Inner Psychic Section
   UNLOCK_YOUR_INNER_PSYCHIC: 'Unlock Your Inner Psychic',
   UNLOCK_PARAGRAPH:
     'Discover the extraordinary world of psychic intuition and remote viewing with SEE Psychic Trainer, the premier app designed to unleash your psychic potential and master your intuition! Engage with our captivating platform that lets you effortlessly tap into your intuitive prowess and remote view enigmatic, random targets. Keep a close eye on your progress by saving your sessions in a custom gallery and share them. Unleash your inner psychic powerhouse and dive into the mysteries of the unseen with our enthralling remote viewing education experience. Awaken your psychic senses and embark on the ultimate intuitive adventure with SEE Psychic Trainer!',
@@ -44,11 +50,14 @@ export const en = {
   CHANGES_PARAGRAPH:
     'Blackhouse Consulting, LLC does not collect any personally identifiable data.The app does use third party services that may collect information used to identify you.',
   LOG_DATA_TITLE: 'Log Data',
-  LOG_DATA_PARAGRAPH: 'I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products such as Google Developer Console Analytics) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics based on this metadata.',
+  LOG_DATA_PARAGRAPH:
+    'I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products such as Google Developer Console Analytics) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics based on this metadata.',
   SECURTY_TITLE: 'Security',
-  SECURTY_PARAGRAPH: 'SEE stores and collects no personally identifiable data and thus stores your remote viewing sessions completely on your device. Blackhouse Consulting, LLC has no mechanism to remotely retrieve, read, or access that data. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.',
+  SECURTY_PARAGRAPH:
+    'SEE stores and collects no personally identifiable data and thus stores your remote viewing sessions completely on your device. Blackhouse Consulting, LLC has no mechanism to remotely retrieve, read, or access that data. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.',
   LINKS_TO_OTHER_SIGHTS_TITLE: 'Links to Other Sites',
-  LINKS_TO_OTHER_SIGHTS_PARAGRAPH: 'This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
+  LINKS_TO_OTHER_SIGHTS_PARAGRAPH:
+    'This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
   CHANGES_TO_POLICY_TITLE: 'Changes to This Privacy Policy',
   CHANGES_TO_POLICY_PARAGRAPH:
     'I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page. If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact us at',

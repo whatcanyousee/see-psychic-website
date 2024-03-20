@@ -1,12 +1,16 @@
 export const es = {
+  // Navbar
   NAVBAR_TITLE_HOME_LINK: 'INICIO',
   NAVBAR_TITLE_DEMO_LINK: '¡Prueba la Demo!',
 
+  // Jumbotron Section
   JUMOBTRON_SUBTITLE:
     '¡El principal entrenador de Visión Remota y Psíquico está aquí!',
 
+  // Download Now Section
   DOWNLOAD_NOW: 'Descargar Ahora',
 
+  // How to SEE Section
   SEE_FOR_YOURSELF: '¡Compruébalo tú mismo!',
   YOU_ARE_MAGICAL: '¡Eres mágico!',
   HOW_TO: 'Cómo',
@@ -18,11 +22,13 @@ export const es = {
 
   TRY_FREE_ONLINE: 'Pruébalo en línea gratis',
 
+  // What is a Psychic Trainer Section
   WHAT_IS_A: '¿Qué es un',
   PSYCHIC_TRAINER: 'psíquico • entrenador?',
   A_TOOL_FOR_PRACTICE:
     'una herramienta utilizada para mejorar tus habilidades psíquicas latentes.',
 
+  // Unlock Inner Psychic Section
   UNLOCK_YOUR_INNER_PSYCHIC: 'Desbloquea Tu Psíquico Interior',
   UNLOCK_PARAGRAPH:
     '¡Descubre el extraordinario mundo de la intuición psíquica y la visión remota con SEE Psychic Trainer, la principal aplicación diseñada para liberar tu potencial psíquico y dominar tu intuición! Interactúa con nuestra cautivadora plataforma que te permite aprovechar sin esfuerzo tu destreza intuitiva y ver de forma remota enigmáticos objetivos aleatorios. Mantén un ojo atento a tu progreso guardando tus sesiones en una galería personalizada y compartiéndolas. Desata tu poder psíquico interior y sumérgete en los misterios de lo invisible con nuestra apasionante experiencia educativa de visión remota. ¡Despierta tus sentidos psíquicos y embárcate en la máxima aventura intuitiva con SEE Psychic Trainer!',

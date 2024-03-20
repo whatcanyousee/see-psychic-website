@@ -4,13 +4,14 @@ import { ScreenSizeService } from '../../services/screen-size.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
+import { CountryDropdownComponent } from "../country-dropdown/country-dropdown.component";
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+    selector: 'app-navbar',
+    standalone: true,
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.scss'],
+    imports: [CommonModule, RouterModule, CountryDropdownComponent]
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   isNavbarVisible = false;

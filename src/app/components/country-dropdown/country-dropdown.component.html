@@ -1,0 +1,11 @@
+<!-- country-dropdown.component.html -->
+<div class="dropdown" (clickOutside)="closeDropdown()">
+  <button class="dropdown-toggle" (click)="toggleDropdown()">
+    <img [src]="selectedFlag" alt="Selected Flag" />
+  </button>
+  <ul class="dropdown-menu" [ngClass]="{ 'show': isOpen }">
+    <li *ngFor="let country of countries" (click)="selectCountry(country.value)">
+      <img [src]="country.flag" alt="" />
+    </li>
+  </ul>
+</div>
