@@ -20,9 +20,14 @@ export class CountryDropdownComponent {
   isOpen = false;
 
   countries = [
+    { flag: 'assets/images/flags/ar.png', value: 'ar' },
+    // { flag: 'assets/images/flags/el.png', value: 'el' },
     { flag: 'assets/images/flags/en.png', value: 'en' },
     { flag: 'assets/images/flags/es.png', value: 'es' },
-    { flag: 'assets/images/flags/ar.png', value: 'ar' },
+    // { flag: 'assets/images/flags/fr.png', value: 'fr' },
+    // { flag: 'assets/images/flags/he.png', value: 'he' },
+    // { flag: 'assets/images/flags/sw.png', value: 'sw' },
+    // { flag: 'assets/images/flags/zh.png', value: 'zh' },
     // Add more countries as needed
   ];
 
